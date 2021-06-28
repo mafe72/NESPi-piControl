@@ -1,6 +1,6 @@
-# Pi Control
+# NESPi piControl
 -----------------
-## NESPi PiControl Install 
+## NESPi piControl Install 
 (Requires RetroPie, please see instructions to install RetroPie at https://retropie.org.uk)
 
 ## Warning!!! Installing the NESPi PiControl Board on the incorrect pins on the Pi can damage your Pi!
@@ -13,7 +13,7 @@
 
   ```bash
  sudo apt-get update
- wget https://github.com/mafe72/NESPi-picontrol/raw/main/script/picontrol.tgz
+ wget https://github.com/mafe72/NESPi-piControl/raw/main/script/picontrol.tgz
  tar -xzf picontrol.tgz
  ```
 5. Run installer
