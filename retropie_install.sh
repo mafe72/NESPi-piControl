@@ -43,6 +43,7 @@ if [ -e $DIR ];
 		echo "NESPi piControl already installed. Updating..."
 		sudo rm -r $DIR
 		sudo rm -r $SCRIPTS
+		sudo rm $PiCTRL
 		wget $SourcePath/$PiCTRL
 		tar -xzf $PiCTRL
 		cd $DIR
