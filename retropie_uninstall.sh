@@ -12,6 +12,7 @@ fi
 CNF=/boot/config.txt
 SCRIPTS=/home/pi/scripts
 DIR=/home/pi/picontrol
+PiCTRL=picontrol.tgz
 
 
 #-----------------------------------------------------------
