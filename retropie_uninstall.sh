@@ -19,6 +19,7 @@ DIR=/home/pi/picontrol
 
 sudo rm -r $DIR
 sudo rm -r $SCRIPTS
+sudo rm $PiCTRL
 
 #-----------------------------------------------------------
 
