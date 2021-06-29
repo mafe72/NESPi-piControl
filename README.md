@@ -5,27 +5,46 @@
 
 ## Warning!!! Installing the NESPi PiControl Board on the incorrect pins on the Pi can damage your Pi!
 
-1. Configure keyboard if not already done
-  * up, down, left, right, start, select, a, and b are enough for now
-2. In settings, connect to local network, choose “SHOW IP” and make a note of the IP address given to your Pi.
-3. Press F4 on the keyboard to exit to the terminal.
-4. Download and extract Pi Control archive
+Prerequisites
+---------------------
 
-  ```bash
- sudo apt-get update
- wget https://github.com/mafe72/NESPi-piControl/raw/main/script/picontrol.tgz
- tar -xzf picontrol.tgz
- ```
-5. Run installer
+1. A Raspberry Pi runing: Raspbian, RetroPie, RecalBox or Batocera
 
-  ```bash
- cd picontrol
- sudo sh ./setup.sh
- ``` 
-6. When prompted to reboot type “y” and hit enter.
-7. After reboot you may now access NESPi PiControl web app from any browser connected to same local network by typing in the IP address of the Pi.
-  * Example: 192.168.1.25
-  * Default Username: picontrol
-  * Default Password: password
+      To install Retropie you may download the image for [Raspberry Pi](https://github.com/RetroPie/RetroPie-Setup/releases/download/4.2/retropie-4.2-rpi2_rpi3.img.gz "RetroPie for version RPi 2/3/4") 2/3/4 and follow the installation instruction at the [retropie website](https://retropie.org.uk/docs/First-Installation/#installation "RetroPie installation instructions").
+	  
+      To install RecalBox download the latest image for Raspberry Pi 2/3/4 and follow the installation instruction at the [recalbox website](https://download.recalbox.com "RecalBox installation instructions").
+	  
+      To install Batocera download the latest image for Raspberry Pi 2/3/4 and follow the installation instruction at the [batocera website](https://batocera.org/download "Batocera installation instructions").
 
-(The NFC reader has set of switches that must be configured for SPI communication)
+2. Internet connection
+
+      Internet access via Ethernet or to set up your internet via WiFi, you can follow the instructions [here](https://retropie.org.uk/docs/Wifi/ "RetroPie WiFi Setup").
+
+3. Keyboard and screen, or any computer/laptop (via SSH)
+
+      To access your Pi via SSH, you can also follow this instructions [here](https://retropie.org.uk/docs/SSH/ "Raspberry Pi SSH Setup").
+	  
+	  
+Software Installation
+---------------------
+
+**NOTE**: This assumes that you have already installed the NESPi-piControl board to your Raspberry Pi.
+
+This instructions are a *step-by-step guide* to install the necessary software for your **NESPi-piControl Board**.
+You can setup this via SSH or using the command line interface in your Raspberry Pi.
+
+----------
+For Raspbian and RetroPie:
+
+1. Make sure internet is connected.
+2. Make sure keyboard is connected (if working directly on the Raspberry Pi).
+3. Press F4 to open the terminal.
+4. On the terminal, type the one-line command below (Case Sensitive):
+
+```bash
+wget -O - "https://github.com/mafe72/NESPi-piControl/raw/main/retropie_install.sh" | sudo bash
+```
+5. When prompted to reboot type “y” and hit enter.
+
+----------	  
+
