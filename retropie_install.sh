@@ -58,3 +58,9 @@ if [ -e $DIR ];
 fi
 #-----------------------------------------------------------
 
+#Step 5) Reboot to apply changes----------------------------
+echo "NESPi-piControl Board installation complete. Rebooting after 3 seconds."
+sleep 4
+sudo reboot
+#-----------------------------------------------------------
+
