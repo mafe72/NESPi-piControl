@@ -9,7 +9,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 #-----------------------------------------------------------
 
-SourcePath=https://raw.githubusercontent.com/mafe72/NESPi-piControl/main/script
+SourcePath=https://raw.githubusercontent.com/mafe72/NESPi-piControl/main/scripts
 CNF=/boot/config.txt
 SCRIPTS=/home/pi/scripts
 PiCTRL=picontrol.tgz
